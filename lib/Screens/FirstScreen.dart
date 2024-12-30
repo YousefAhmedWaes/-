@@ -80,8 +80,8 @@ class FirstScreen extends StatelessWidget {
             SizedBox(height: 100),
             ElevatedButton(
               style: ButtonStyle(
-                minimumSize: MaterialStateProperty.all(Size(400, 70)),
-                backgroundColor: MaterialStateProperty.all(Colors.blueAccent),
+                minimumSize: WidgetStateProperty.all(Size(400, 70)),
+                backgroundColor: WidgetStateProperty.all(Colors.blueAccent),
               ),
               onPressed: () {
                 Navigator.push(

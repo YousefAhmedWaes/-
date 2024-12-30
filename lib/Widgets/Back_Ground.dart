@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:myproject/Screens/Login.dart';
-import 'package:myproject/Widgets/BackGround.dart';
-class Background extends StatelessWidget {
-  const Background({super.key, required Stack child});
+import 'package:myproject/Widgets/Back_Ground.dart';
+
+class BackGround extends StatelessWidget {
+  BackGround({super.key,});
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +29,6 @@ class Background extends StatelessWidget {
           ),
         ),
       ],
-
         ),
     ),
     );

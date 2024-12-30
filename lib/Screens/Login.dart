@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:myproject/Screens/Login.dart';
-import 'package:myproject/Widgets/BackGround.dart';
+import 'package:myproject/Widgets/Back_Ground.dart';
 import 'package:myproject/Screens/Password.dart';
 import 'package:myproject/Widgets/Hello.dart';
+
+
+
 class Login extends StatefulWidget {
   const  Login({super.key});
 
@@ -15,10 +18,14 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: Colors.white,
+
       body: Center(
         child: Stack(
+
           children: [
+         Positioned(child: BackGround(),),
             Positioned(
+
          right: 0,
               top: 300,
               child: SvgPicture.asset(
@@ -65,8 +72,8 @@ class _LoginState extends State<Login> {
             ),
 
             Positioned(
+              bottom:240 ,
               left: 20,
-              top: 645,
               width: 400,
               child: Container(
                 decoration: BoxDecoration(
@@ -89,8 +96,8 @@ class _LoginState extends State<Login> {
               ),
             ),
             Positioned(
+              bottom:140,
               left: 20,
-              top: 740,
               width: 400,
               child:
             ElevatedButton(
@@ -102,7 +109,7 @@ class _LoginState extends State<Login> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Hello()),
+                  MaterialPageRoute(builder: (context) =>Password()),
                 );
               },
               child: Text(
